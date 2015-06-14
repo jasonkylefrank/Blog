@@ -67,6 +67,11 @@ jekyll-now-repo-version: v1.1.0
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
+# JF
+compiled-dirs:
+  css: 'css'
+  # could add more entries for 'js', etc.
+
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
