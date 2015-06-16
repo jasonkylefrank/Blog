@@ -73,3 +73,13 @@ gulp.task('watch', function () {
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);
+
+
+
+gulp.task('test-run', function() {
+  //https://github.com/cbarrick/gulp-run
+  var run = require('gulp-run');
+  // Use gulp-run to start a pipeline
+    run('echo hello dude').exec()  // prints "Hello World\n".
+      .pipe(gulp.dest('testDir'))    // Writes "Hello World\n" to output/echo.
+});
